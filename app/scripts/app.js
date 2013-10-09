@@ -8,6 +8,7 @@ angular.module('witHotelApp', [])
         controller: 'MainCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        templateUrl: '404.html',
+        controller: 'MainCtrl'
       });
   });
