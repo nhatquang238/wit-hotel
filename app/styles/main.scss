@@ -16,125 +16,220 @@ $large: 2.618em;
 
 /* Put your CSS here */
 html, body, div[ng-view]{
-    height: 100%;
+  height: 100%;
 }
 
 input {
-    box-sizing: border-box;
-    height: auto !important;
+  box-sizing: border-box;
+  height: auto !important;
 }
 
 body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
-    font-size: 16px;
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 16px;
 }
 
 .hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 1.4em;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
+  margin: 50px auto 0 auto;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.4em;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px;
 
-    & h1 {
-        font-size: 2.618em;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
+  & h1 {
+    font-size: 2.618em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
 }
 
 .wh-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    position: fixed;
-    width: 100%;
-    background: rgba(0,0,0,.85);
-    padding: 3% 10%;
-    margin: 0;
-    font-size: 1.68em;
-    z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,.85);
+  padding: 3% 10%;
+  margin: 0;
+  font-size: 1.68em;
+  z-index: 1000;
 
-    & li {
-        list-style: none;
-        flex: 1 1 auto;
-    }
-    & a {
-        color: white;
-    }
+  & li {
+    list-style: none;
+    flex: 1 1 auto;
+  }
+  & a {
+    color: white;
+  }
 }
 
 .about {
-    // position: fixed;
-    z-index: -1000;
-    height: 718px; //height of video
+  // position: fixed;
+  z-index: -1000;
+  height: 718px; //height of video
 }
 
 .tagline {
-    position: absolute;
-    color: white;
-    top:45%;
-    left:30%;
-    background: rgba(0,0,0,.5);
-    padding: 0.5em 1em;
+  position: absolute;
+  color: white;
+  top:45%;
+  left:34%;
+  background: rgba(0,0,0,.5);
+  padding: 0.5em 1em;
 }
 
 .video-bg {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .booking {
-    position: relative;
-    min-height: 100%;
-    display: flex;
-    flex-direction: row;
-    background: $dark-bg;
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  background: $dark-bg;
 }
 
 .room-bg {
-    flex: 3 3 auto;
-    min-height: 100%;
-    width: 70%;
-    background: url(../images/room-bg.png);
+  flex: 3 3 auto;
+  min-height: 100%;
+  width: 70%;
+  background: url(../images/room-bg.png);
 }
 
 .search-room {
-    flex: 1 1 auto;
-    width: 30%;
-    padding: 0% 3%;
-    color: $light-text;
+  flex: 1 1 auto;
+  width: 30%;
+  padding: 0% 3%;
+  color: $light-text;
 
-    &>h2, &>label, &>input {
-        width: 100%;
-    }
-    &>label, &>input {
-        font-size: 1em;
-    }
-    &>h2 {
-        padding-top: 4em;
-    }
-    &>label {
-        padding-top: 1em;
-    }
-    &>input {
-        padding: 0.5em 1em;
-    }
-    &>input[type="submit"]{
-        margin-top: 2em;
-        background: $cta;
-        color: $light-text;
-        font-size: $medium;
-        border: none;
-        transition: all .1s ease-in-out;
-    }
-    &>input[type="submit"]:hover{
-        transform: scale(1.01);
-        background: lighten($cta,5%);
-        box-shadow: 0 0 6px rgba(0,0,0,.7);
-    }
+  &>h2, &>label, &>input {
+    width: 100%;
+  }
+  &>label, &>input {
+    font-size: 1em;
+  }
+  &>h2 {
+    padding-top: 4em;
+  }
+  &>label {
+    padding-top: 1em;
+  }
+  &>input {
+    padding: 0.5em 1em;
+  }
+  &>input[type="submit"]{
+    margin-top: 2em;
+    background: $cta;
+    color: $light-text;
+    font-size: $medium;
+    border: none;
+    transition: all .1s ease-in-out;
+  }
+  &>input[type="submit"]:hover{
+    transform: scale(1.01);
+    background: lighten($cta,5%);
+    box-shadow: 0 0 6px rgba(0,0,0,.65);
+  }
+}
+
+.width60 {
+  width: 60%;
+}
+.width40 {
+  width: 40%;
+}
+
+.exploration {
+  width: 100%;
+  height: 100%;
+
+  &>.wh-left, &>.wh-right {
+    float: left;
+    height: 100%;
+  }
+}
+
+.food, .wh-bottom {
+  height: 60%;
+}
+.contact, .wh-top {
+  height: 40%;
+}
+.contact {
+  padding: 0 10%;
+}
+
+.wh-bottom {
+   &>.wh-left, &>.wh-right {
+    float: left;
+    height: 100%;
+  }
+}
+
+.experience, .tripadvisor {
+  height: 100%;
+  float: left;
+}
+
+.trisara {
+  height: 33%;
+}
+.trisara h3 {
+  margin-top: 0;
+  padding-top: 15%;
+  font-size: $large;
+}
+
+.brunch {
+  background: url(../images/brunch.png);
+  background-size: 700px;
+  height: 67%;
+}
+.offer {
+  height: 100%;
+  background: url(../images/offer.png);
+  background-position: right bottom;
+  background-size: 700px;
+}
+.food {
+  background: url(../images/food.png);
+  background-position-y: 50%;
+}
+.experience {
+  background: url(../images/spa.png);
+  background-size: 700px;
+  background-position: 30% top;
+}
+
+.tripadvisor, .trisara {
+  text-align: center;
+}
+.tripadvisor h3 {
+  padding-top: 25%;
+}
+
+.contact>textarea, .contact>input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+.contact>input[type="submit"] {
+  margin-top: 1em;
+  border: none;
+  background: $dark-bg;
+  color: $light-text;
+  padding: .5em 1em;
+  transition: all .1s ease-in-out;
+}
+.contact>input[type="submit"]:hover {
+  background: lighten($dark-bg, 5%);
+  transform: scale(1.01);
+  box-shadow: 0 0 6px rgba(0,0,0,.65);
 }

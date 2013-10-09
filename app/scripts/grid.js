@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('witHotelApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('GridCtrl', function ($scope) {
 
   });
