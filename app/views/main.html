@@ -1,9 +1,40 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+<nav>
+  <ul class="wh-nav">
+    <li><a href="#about">About us</a></li>
+    <li><a href="#booking">Booking</a></li>
+    <li><a href="#exploration">Exploration</a></li>
   </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+</nav>
+
+<div id="about" class="about">
+  <h1 class="tagline">For a private 5-star stay</h1>
+
+  <video class="video-bg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+    <source src="../video/ropeswing.webm" type="video/webm"></source>
+    <source src="../video/ropeswing.mp4" type="video/mp4"></source>
+    Your browser does not support the video tag
+  </video>
+</div>
+
+<div id="booking">
+  <div class="room-bg"></div>
+
+  <form action="#" class="search-room">
+    <h2>Booking</h2>
+    <label for="guest">Number of guests</label>
+    <select name="guest" id="guest">
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <label for="start-date">Start from</label>
+    <input type="date" name="start-date">
+    <label for="end-date">End at</label>
+    <input type="date" name="end-date">
+    <input type="submit" value="Search room">
+  </form>
+</div>
+
+<div id="#exploration" class="exploration">
+
 </div>
