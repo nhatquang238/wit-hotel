@@ -1,11 +1,27 @@
 $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
+// colors
+$dark-bg: #2c3e50;
+$light-text: #fff;
+$cta: #c23a2c;
+
+// font-size
+$small: 1em;
+$medium: 1.618em;
+$large: 2.618em;
+
 @import "bootstrap-sass/lib/bootstrap";
+@import "normalize.scss/normalize";
 
 /* Put your CSS here */
 html, body, div[ng-view]{
     height: 100%;
+}
+
+input {
+    box-sizing: border-box;
+    height: auto !important;
 }
 
 body {
@@ -38,9 +54,11 @@ body {
     justify-content: flex-start;
     position: fixed;
     width: 100%;
-    height: 100px;
-    padding: 3% 10% 0;
+    background: rgba(0,0,0,.85);
+    padding: 3% 10%;
+    margin: 0;
     font-size: 1.68em;
+    z-index: 1000;
 
     & li {
         list-style: none;
@@ -54,7 +72,7 @@ body {
 .about {
     // position: fixed;
     z-index: -1000;
-    height: 720px; //height of video
+    height: 718px; //height of video
 }
 
 .tagline {
@@ -66,19 +84,57 @@ body {
     padding: 0.5em 1em;
 }
 
+.video-bg {
+    max-width: 100%;
+}
+
 .booking {
     position: relative;
     min-height: 100%;
     display: flex;
     flex-direction: row;
+    background: $dark-bg;
 }
 
 .room-bg {
-    flex: 3 1 auto;
+    flex: 3 3 auto;
     min-height: 100%;
+    width: 70%;
     background: url(../images/room-bg.png);
 }
 
 .search-room {
-    flex: 1 3 auto;
+    flex: 1 1 auto;
+    width: 30%;
+    padding: 0% 3%;
+    color: $light-text;
+
+    &>h2, &>label, &>input {
+        width: 100%;
+    }
+    &>label, &>input {
+        font-size: 1em;
+    }
+    &>h2 {
+        padding-top: 4em;
+    }
+    &>label {
+        padding-top: 1em;
+    }
+    &>input {
+        padding: 0.5em 1em;
+    }
+    &>input[type="submit"]{
+        margin-top: 2em;
+        background: $cta;
+        color: $light-text;
+        font-size: $medium;
+        border: none;
+        transition: all .1s ease-in-out;
+    }
+    &>input[type="submit"]:hover{
+        transform: scale(1.01);
+        background: lighten($cta,5%);
+        box-shadow: 0 0 6px rgba(0,0,0,.7);
+    }
 }
