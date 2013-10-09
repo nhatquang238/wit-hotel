@@ -344,6 +344,9 @@ module.exports = function (grunt) {
     }
   });
 
+  // Load copy plugin
+  grunt.loadNpmTasks('grunt-contrib-copy');
+
   grunt.registerTask('server', function (target) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'open', 'connect:dist:keepalive']);
