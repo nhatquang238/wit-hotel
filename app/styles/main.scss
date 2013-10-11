@@ -54,19 +54,35 @@ body {
   justify-content: flex-start;
   position: fixed;
   width: 100%;
-  background: rgba(0,0,0,.85);
-  padding: 3% 10%;
+  background: white;
   margin: 0;
-  font-size: 1.68em;
+  font-size: $medium;
   z-index: 1000;
+
+  & a {
+    color: $dark-bg;
+    padding: 1em 0;
+  }
+
+  & ul {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 
   & li {
     list-style: none;
     flex: 1 1 auto;
+    padding: 1em 0;
   }
-  & a {
-    color: white;
-  }
+}
+
+.logo {
+  flex: 2 2 auto;
+  margin: 0 0 0 2em;
+  padding: 1em 0;
+  font-size: $small;
 }
 
 .about {
@@ -90,7 +106,7 @@ body {
 
 .booking {
   position: relative;
-  min-height: 100%;
+  min-height: 90%;
   display: flex;
   flex-direction: row;
   background: $dark-bg;
@@ -116,7 +132,7 @@ body {
     font-size: 1em;
   }
   &>h2 {
-    padding-top: 4em;
+    padding-top: 1em;
   }
   &>label {
     padding-top: 1em;
@@ -232,4 +248,8 @@ body {
   background: lighten($dark-bg, 5%);
   transform: scale(1.01);
   box-shadow: 0 0 6px rgba(0,0,0,.65);
+}
+.contact h3 {
+  margin-top: 0;
+  padding-top: 0.5em;
 }

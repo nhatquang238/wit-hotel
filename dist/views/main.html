@@ -1,74 +1,75 @@
-<nav>
-  <ul class="wh-nav">
-    <li><a href="#about">About us</a></li>
-    <li><a href="#booking">Booking</a></li>
-    <li><a href="#exploration">Exploration</a></li>
-  </ul>
-</nav>
+<nav class="wh-nav">
+    <p class="logo">Trisara</p>
+    <ul>
+      <li><a smooth-scroll-jquery="" speed="300" target="about" href="">About us</a></li>
+      <li><a smooth-scroll-jquery="" speed="300" target="booking" href="" offset="63">Booking</a></li>
+      <li><a smooth-scroll-jquery="" speed="300" target="exploration" offset="63" href="">Exploration</a></li>
+    </ul>
+  </nav>
 
-<div id="about" class="about">
-  <h1 class="tagline">For a private 5-star stay</h1>
+  <div id="about" class="about">
+    <h1 class="tagline">For a private 5-star stay</h1>
 
-  <video class="video-bg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-    <source src="../video/ropeswing.webm" type="video/webm"></source>
-    <source src="../video/ropeswing.mp4" type="video/mp4"></source>
-    Your browser does not support the video tag
-  </video>
-</div>
-
-<div id="booking" class="booking">
-  <div class="room-bg"></div>
-
-  <form action="#" class="search-room">
-    <h2>Booking</h2>
-    <label for="guest">Number of guests</label>
-    <select name="guest" id="guest">
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </select>
-    <label for="children">Number of children (0-12 years)</label>
-    <select name="children" id="children">
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </select>
-    <label for="start-date">Start from</label>
-    <input type="date" name="start-date">
-    <label for="end-date">End at</label>
-    <input type="date" name="end-date">
-    <input type="submit" value="Search room">
-  </form>
-</div>
-
-<div id="#exploration" class="exploration">
-  <div class="wh-left width40">
-    <div class="food"></div>
-    <div class="contact">
-      <h3>Contact us</h3>
-      <input type="email" placeholder="john.doe@example.com">
-      <textarea name="textarea" rows="4">I want to know more about...</textarea>
-      <input type="submit" value="Send">
-    </div>
+    <video class="video-bg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+      <source src="../video/ropeswing.webm" type="video/webm"></source>
+      <source src="../video/ropeswing.mp4" type="video/mp4"></source>
+      Your browser does not support the video tag
+    </video>
   </div>
-  <div class="wh-right width60">
-    <div class="wh-top">
-      <div class="experience width60"></div>
-      <div class="tripadvisor width40">
-        <h3>Tripadvisor's Rating</h3>
-        <p>5 stars</p>
+
+  <div id="booking" class="booking">
+    <div class="room-bg"></div>
+
+    <form action="#" class="search-room">
+      <h2>Booking</h2>
+      <label for="guest">Number of guests</label>
+      <select name="guest" id="guest">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <label for="children">Number of children (0-12 years)</label>
+      <select name="children" id="children">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <label for="start-date">Start from</label>
+      <input type="date" name="start-date">
+      <label for="end-date">End at</label>
+      <input type="date" name="end-date">
+      <input type="submit" value="Search room">
+    </form>
+  </div>
+
+  <div id="exploration" class="exploration">
+    <div class="wh-left width40">
+      <div class="food"></div>
+      <div class="contact">
+        <h3>Contact us</h3>
+        <input type="email" placeholder="john.doe@example.com">
+        <textarea name="textarea" rows="4">I want to know more about...</textarea>
+        <input type="submit" value="Send">
       </div>
     </div>
-    <div class="wh-bottom">
-      <div class="wh-left width40">
-        <div class="trisara">
-          <h3>Trisara</h3>
+    <div class="wh-right width60">
+      <div class="wh-top">
+        <div class="experience width60"></div>
+        <div class="tripadvisor width40">
+          <h3>Tripadvisor's Rating</h3>
+          <p>5 stars</p>
         </div>
-        <div class="brunch"></div>
       </div>
-      <div class="wh-right width60">
-        <div class="offer"></div>
+      <div class="wh-bottom">
+        <div class="wh-left width40">
+          <div class="trisara">
+            <h3>Trisara</h3>
+          </div>
+          <div class="brunch"></div>
+        </div>
+        <div class="wh-right width60">
+          <div class="offer"></div>
+        </div>
       </div>
     </div>
   </div>
-</div>

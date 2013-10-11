@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('witHotelApp')
-  .controller('MainCtrl', function ($scope) {
+window.angular.module('ngwh.controllers.main', [])
+	.controller('MainCtrl', function ($scope) {
 
-  });
+	});

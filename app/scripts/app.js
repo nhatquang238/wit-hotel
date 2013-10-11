@@ -1,14 +1,9 @@
 'use strict';
 
-angular.module('witHotelApp', [])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        templateUrl: '404.html',
-        controller: 'MainCtrl'
-      });
-  });
+window.app = angular.module('witHotelApp', ['ngwh.controllers', 'angularSmoothscroll']);
+
+//bundling controllers
+window.angular.module('ngwh.controllers', ['ngwh.controllers.main']);
+
+//bundling services
+// window.angular.module('ngwh.services', ['ngwh.services.booking']);

@@ -1,1 +1,0 @@
-"use strict";angular.module("witHotelApp",[]).config(["$routeProvider",function(a){a.when("/",{templateUrl:"views/main.html",controller:"MainCtrl"}).otherwise({templateUrl:"404.html",controller:"MainCtrl"})}]),angular.module("witHotelApp").controller("MainCtrl",["$scope",function(){}]);
