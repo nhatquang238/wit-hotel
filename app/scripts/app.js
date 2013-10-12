@@ -6,4 +6,4 @@ window.app = angular.module('witHotelApp', ['ngwh.controllers', 'angularSmoothsc
 window.angular.module('ngwh.controllers', ['ngwh.controllers.main']);
 
 //bundling services
-// window.angular.module('ngwh.services', ['ngwh.services.booking']);
+window.angular.module('ngwh.services', ['ngwh.services.booking']);
