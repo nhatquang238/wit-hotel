@@ -17,7 +17,7 @@
     </video>
   </div>
 
-  <div id="booking" class="booking">
+  <div id="booking" class="booking" ng-controller="BookingCtrl">
     <div class="room-bg"></div>
 
     <form action="#" class="search-room">
@@ -42,6 +42,14 @@
       <input type="date" name="end-date">
       <input type="submit" value="Search room">
     </form>
+    <!-- <table>
+      <tr ng-repeat="room in rooms">
+        <td>{{room.name}}</td>
+        <td>{{room.view}}</td>
+        <td>{{room.walkingDistance}}</td>
+        <td>{{privacy}}</td>
+      </tr>
+    </table> -->
   </div>
 
   <div id="exploration" class="exploration">

@@ -3,7 +3,7 @@ window.angular.module('ngwh.controllers.booking', [])
 		function ($scope, Booking, $timeout) {
 			$scope.rooms = Booking.rooms;
 			$scope.customerFilter = null;
-			$scope.customerTypes = ['couple', 'family', 'business', 'friends'];
+			$scope.customerTypes = ['couple', 'family', 'friends', 'business men', 'solo travel'];
 
 			var today = new Date(),
 					tomorrow = new Date(today.getTime() + (24*60*60*1000));
