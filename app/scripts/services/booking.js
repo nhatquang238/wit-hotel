@@ -182,4 +182,5 @@ window.angular.module('ngwh.services.booking',[])
 				"poolSize": 22
 			}
 		];
-	})
+		return Booking;
+	});

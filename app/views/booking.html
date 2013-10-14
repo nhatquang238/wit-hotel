@@ -1,0 +1,25 @@
+<div>
+	<select ng-model="customerFilter" ng-options="label for label in customerTypes" name="customer_type" id="customer_type">
+		<option value="">All</option>
+	</select>
+	<table>
+		<thead>
+			<tr>
+				<th>Room</th>
+				<th>Ocean View</th>
+				<th>Walking Distance</th>
+				<th>Privacy</th>
+				<th>Price</th>
+				<th>Customer Type</th>
+			</tr>
+		</thead>
+	  <tr ng-repeat="room in rooms | orderBy:'price' | isCustomer:customerFilter">
+	    <td>{{room.name}}</td>
+	    <td>{{room.view}}</td>
+	    <td>{{room.walkingDistance}}</td>
+	    <td>{{room.privacy}}</td>
+	    <td>{{room.price}}</td>
+	    <td>{{room.customer_type}}</td>
+	  </tr>
+	</table>
+</div>
