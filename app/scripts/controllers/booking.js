@@ -1,4 +1,4 @@
-window.angular.module('ngwh.controllers.booking', [])
+angular.module('ngwh.controllers.booking', [])
 	.controller('BookingCtrl', ['$scope', 'Booking', '$timeout',
 		function ($scope, Booking, $timeout) {
 			$scope.rooms = Booking.rooms;

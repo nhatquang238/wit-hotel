@@ -1,4 +1,4 @@
-window.angular.module('ngwh.services.booking',[])
+angular.module('ngwh.services.booking',[])
 	.factory('Booking', function () {
 		var Booking = {};
 		Booking.rooms = [

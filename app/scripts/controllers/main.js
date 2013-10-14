@@ -1,6 +1,6 @@
-'use strict';
+// 'use strict';
 
-window.angular.module('ngwh.controllers.main', [])
-	.controller('MainCtrl', function ($scope) {
+// angular.module('ngwh.controllers.main', [])
+// 	.controller('MainCtrl', function ($scope) {
 
-	});
+// 	});

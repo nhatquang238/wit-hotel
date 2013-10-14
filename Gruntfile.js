@@ -274,7 +274,6 @@ module.exports = function (grunt) {
             '.htaccess',
             'bower_components/**/*',
             'images/{,*/}*.{gif,webp}',
-            'video/*',
             'styles/fonts/*'
           ]
         }, {
@@ -344,9 +343,6 @@ module.exports = function (grunt) {
       }
     }
   });
-
-  // Load copy plugin
-  grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('server', function (target) {
     if (target === 'dist') {

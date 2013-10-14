@@ -14,4 +14,4 @@ window.app.config(['$routeProvider', function ($routeProvider) {
 	{
 		templateUrl: '404.html'
 	});
-}])
+}]);
