@@ -1,16 +1,32 @@
 <div>
+	<label for="customer_type">You are: </label>
 	<select ng-model="customerFilter" ng-options="label for label in customerTypes" name="customer_type" id="customer_type">
 		<option value="">All</option>
 	</select>
+	<div class="form-horizontal">
+		<label for="checkin">Check in</label>
+		<input id="checkin" type="text" datepicker-popup="dd-MMMM-yyyy" is-open="openedCI" ng-model="checkin" min="minCheckin" ng-require="true">
+		<button class="btn" ng-click="openCheckin()"><i class="icon-calendar"></i></button>
+	</div>
+	<div class="form-horizontal">
+		<label for="checkout">Check out</label>
+		<input id="checkout" type="text" datepicker-popup="dd-MMMM-yyyy" is-open="openedCO" ng-model="checkout" min="minCheckout" ng-require="true">
+		<button class="btn" ng-click="openCheckout()"><i class="icon-calendar"></i></button>
+	</div>
 	<table>
 		<thead>
-			<tr>
+			<tr align="left">
 				<th>Room</th>
 				<th>Ocean View</th>
 				<th>Walking Distance</th>
 				<th>Privacy</th>
 				<th>Price</th>
 				<th>Customer Type</th>
+				<th>Available From</th>
+				<th>Available Till</th>
+				<th>Adult Only Max</th>
+				<th>Adult with Children</th>
+				<th>Children Max</th>
 			</tr>
 		</thead>
 	  <tr ng-repeat="room in rooms | orderBy:'price' | isCustomer:customerFilter">
@@ -20,6 +36,11 @@
 	    <td>{{room.privacy}}</td>
 	    <td>{{room.price}}</td>
 	    <td>{{room.customer_type}}</td>
+	    <td>{{room.avaiFrom}}</td>
+	    <td>{{room.avaiTo}}</td>
+	    <td>{{room.adultOnly}}</td>
+	    <td>{{room.adultWithChildren}}</td>
+	    <td>{{room.children}}</td>
 	  </tr>
 	</table>
 </div>

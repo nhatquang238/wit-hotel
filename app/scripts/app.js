@@ -1,6 +1,6 @@
 'use strict';
 
-window.app = angular.module('witHotelApp', ['ngwh.controllers', 'ngwh.services', 'angularSmoothscroll']);
+window.app = angular.module('witHotelApp', ['ngwh.controllers', 'ngwh.services', 'angularSmoothscroll', 'ui.bootstrap']);
 
 //bundling controllers
 window.angular.module('ngwh.controllers', ['ngwh.controllers.main','ngwh.controllers.booking']);
